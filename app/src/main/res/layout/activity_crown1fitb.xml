@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".castle1.crown1FITB"
+    android:orientation="horizontal"
+    android:background="@drawable/crown1background">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="246dp"
+        android:layout_height="263dp"
+        android:background="@drawable/letter_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707">
+
+        <TextView
+            android:id="@+id/letter1Crown1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/simplyr_rounded"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/black"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/letter2Crown1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/letter1Crown1"
+            android:fontFamily="@font/simplyr_rounded"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="@color/black"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/letter4Crown1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/letter1Crown1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/simplyr_rounded"
+            android:gravity="center"
+            android:text="D"
+            android:textColor="@color/black"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/letter3Crown1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/letter2Crown1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="28dp"
+            android:layout_toEndOf="@+id/letter1Crown1"
+            android:fontFamily="@font/simplyr_rounded"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@color/black"
+            android:textSize="80sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/castle1ButtonImageView"
+        android:layout_width="119dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:elevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/castle1button_tap" />
+
+    <ImageView
+        android:id="@+id/nextButtonImgView"
+        android:layout_width="119dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="64dp"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toEndOf="@+id/castle1ButtonImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/next_button"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:layout_width="49dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/crown1Item1TextView"
+        app:layout_constraintEnd_toStartOf="@+id/crown1Item1TextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/castle1ButtonImageView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/dropItem1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/simplyr_rounded"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="60sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/letter_background" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/item1Crown1ImageView"
+        android:layout_width="79dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="172dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387"
+        app:srcCompat="@drawable/ape" />
+
+    <TextView
+        android:id="@+id/crown1Item1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/simplyr_rounded"
+        android:text="pe"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item1Crown1ImageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/castle1ButtonImageView"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <RelativeLayout
+        android:layout_width="49dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/crown1Item2TextView"
+        app:layout_constraintEnd_toStartOf="@+id/crown1Item2TextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/item1Crown1ImageView"
+        app:layout_constraintTop_toBottomOf="@+id/castle1ButtonImageView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/dropItem2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/simplyr_rounded"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="60sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/letter_background" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/item2Crown1ImageView"
+        android:layout_width="101dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="430dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387"
+        app:srcCompat="@drawable/bee" />
+
+
+    <TextView
+        android:id="@+id/crown1Item2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/simplyr_rounded"
+        android:text="ee"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item2Crown1ImageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/item1Crown1ImageView"
+        app:layout_constraintTop_toBottomOf="@+id/castle1ButtonImageView"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <ImageView
+        android:id="@+id/item3Crown1ImageView"
+        android:layout_width="112dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="172dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859"
+        app:srcCompat="@drawable/cat" />
+
+    <RelativeLayout
+        android:layout_width="49dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/crown1Item3TextView"
+        app:layout_constraintEnd_toStartOf="@+id/crown1Item3TextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/castle1ButtonImageView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/dropItem3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/simplyr_rounded"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="60sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/letter_background" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/crown1Item3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/simplyr_rounded"
+        android:text="at"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item3Crown1ImageView"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crown1Item1TextView"
+        app:layout_constraintVertical_bias="0.596" />
+
+    <ImageView
+        android:id="@+id/item4Crown1ImageView"
+        android:layout_width="105dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="430dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item2Crown1ImageView"
+        app:layout_constraintVertical_bias="0.422"
+        app:srcCompat="@drawable/dog" />
+
+    <RelativeLayout
+        android:layout_width="49dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/crown1Item4TextView"
+        app:layout_constraintEnd_toStartOf="@+id/crown1Item4TextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/item3Crown1ImageView"
+        app:layout_constraintTop_toBottomOf="@+id/castle1ButtonImageView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/dropItem4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/simplyr_rounded"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="60sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/letter_background" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/crown1Item4TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/simplyr_rounded"
+        android:text="og"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item4Crown1ImageView"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toEndOf="@+id/item3Crown1ImageView"
+        app:layout_constraintTop_toBottomOf="@+id/crown1Item2TextView"
+        app:layout_constraintVertical_bias="0.596" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/simplyr_rounded"
+        android:text="Fill in the blank with correct letters:"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toStartOf="@+id/nextButtonImgView"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toEndOf="@+id/castle1ButtonImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentblack"
+        android:visibility="visible"
+        >
+
+
+        <ImageView
+            android:id="@+id/tryAgainButtonImageView"
+            android:layout_width="119dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="478dp"
+            android:layout_marginBottom="99dp"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.971"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/retry_button" />
+
+        <ImageView
+            android:id="@+id/nextButton2ImgView"
+            android:layout_width="119dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="258dp"
+            android:layout_marginBottom="99dp"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.971"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/nextbtn_tap" />
+
+        <TextView
+            android:id="@+id/markTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="180dp"
+            android:gravity="center"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:text="4/4"
+            android:textColor="@color/white"
+            android:textSize="100sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="82dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="288dp"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:gravity="center"
+            android:text="Congratulations!"
+            android:textColor="@color/yellow"
+            android:textSize="75sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

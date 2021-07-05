@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".Castle1Activity"
+    android:background="@drawable/background_castle1">
+
+
+    <TextView
+        android:id="@+id/castle1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33.5dp"
+        android:fontFamily="@font/simply_rounded_bold"
+        android:text="Castle 1"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.334"
+        app:layout_constraintStart_toEndOf="@+id/backButtonImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backButtonImageView"
+        android:layout_width="119dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:elevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerCrown"
+        android:layout_width="523dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:foregroundGravity="center"
+        android:paddingRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/castle1TextView" />
+
+    <ImageView
+        android:id="@+id/castle1Foreground"
+        android:layout_width="660dp"
+        android:layout_height="547dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="392dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/castle_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

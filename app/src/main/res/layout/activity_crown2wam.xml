@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".castle1.crown2WAM"
+    android:background="@drawable/wamsky_background">
+
+
+
+
+    <ImageView
+        android:id="@+id/cloudImageView"
+        android:layout_width="875dp"
+        android:layout_height="151dp"
+        android:src="@drawable/wam_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/grassImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wam_grass"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="61dp"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/castle1ButtonImageView"
+        android:layout_width="119dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:elevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/castle1button_tap" />
+
+    <ImageView
+        android:id="@+id/scoreImageView"
+        android:layout_width="119dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toEndOf="@+id/timer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/letter_background" />
+
+    <TextView
+        android:id="@+id/scoreTxtView"
+        android:layout_width="119dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toEndOf="@+id/timer"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/simply_rounded_bold"/>
+
+    <RelativeLayout
+        android:layout_width="728dp"
+        android:layout_height="362dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cloudImageView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/moleImageV0"
+            android:layout_width="156dp"
+            android:layout_height="179dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginBottom="125dp"
+            android:src="@drawable/hole"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="123dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/moleItem0crown2TxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/moleImageV0"
+            android:layout_alignTop="@+id/moleImageV0"
+            android:layout_alignEnd="@+id/moleImageV0"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:text="E"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/moleImageV1"
+            android:layout_width="156dp"
+            android:layout_height="179dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="402dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginBottom="125dp"
+            android:src="@drawable/hole"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="123dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/moleItem1crown2TxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/moleImageV1"
+            android:layout_alignTop="@+id/moleImageV1"
+            android:layout_alignEnd="@+id/moleImageV1"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:text="E"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:visibility="invisible"/>
+
+
+        <ImageView
+            android:id="@+id/moleImageV2"
+            android:layout_width="156dp"
+            android:layout_height="179dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-8dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/hole"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="123dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/moleItem2crown2TxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/moleImageV2"
+            android:layout_alignTop="@+id/moleImageV2"
+            android:layout_alignEnd="@+id/moleImageV2"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:text="E"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/moleImageV3"
+            android:layout_width="156dp"
+            android:layout_height="179dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="275dp"
+            android:layout_marginTop="102dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/hole"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="123dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/moleItem3crown2TxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/moleImageV3"
+            android:layout_alignTop="@+id/moleImageV3"
+            android:layout_alignEnd="@+id/moleImageV3"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:text="E"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/moleImageV4"
+            android:layout_width="156dp"
+            android:layout_height="179dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="540dp"
+            android:layout_marginTop="103dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/hole"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="123dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/moleItem4crown2TxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/moleImageV4"
+            android:layout_alignTop="@+id/moleImageV4"
+            android:layout_alignEnd="@+id/moleImageV4"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:text="E"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/moleImageV5"
+            android:layout_width="156dp"
+            android:layout_height="179dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="151dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginBottom="-30dp"
+            android:src="@drawable/hole"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="123dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/moleItem5crown2TxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/moleImageV5"
+            android:layout_alignTop="@+id/moleImageV5"
+            android:layout_alignEnd="@+id/moleImageV5"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="61dp"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:text="E"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/moleImageV6"
+            android:layout_width="156dp"
+            android:layout_height="179dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="402dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginBottom="-30dp"
+            android:src="@drawable/hole"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="123dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/moleItem6crown2TxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/moleImageV6"
+            android:layout_alignTop="@+id/moleImageV6"
+            android:layout_alignEnd="@+id/moleImageV6"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:text="E"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentblack"
+        android:visibility="gone"
+        >
+
+
+        <ImageView
+            android:id="@+id/tryAgainButtonImageView"
+            android:layout_width="119dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="478dp"
+            android:layout_marginBottom="99dp"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.971"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/retry_button" />
+
+        <ImageView
+            android:id="@+id/nextButton2ImgView"
+            android:layout_width="119dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="258dp"
+            android:layout_marginBottom="99dp"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.971"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/nextbtn_tap" />
+
+        <TextView
+            android:id="@+id/markTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="180dp"
+            android:gravity="center"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:text="4/4"
+            android:textColor="@color/white"
+            android:textSize="100sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="82dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="288dp"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:gravity="center"
+            android:text="Congratulations!"
+            android:textColor="@color/yellow"
+            android:textSize="75sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/simply_rounded_bold"
+        android:text="Timer"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toEndOf="@+id/castle1ButtonImageView"
+        app:layout_constraintTop_toTopOf="@+id/cloudImageView" />
+
+
+    <RelativeLayout
+        android:id="@+id/startLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentblack"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/startButton2ImgView"
+            android:layout_width="119dp"
+            android:layout_height="57dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="99dp"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.971"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/nextbtn_tap" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="82dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="288dp"
+            android:fontFamily="@font/simply_rounded_bold"
+            android:gravity="center"
+            android:text="Whack A Mole"
+            android:textColor="@color/yellow"
+            android:textSize="75sp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

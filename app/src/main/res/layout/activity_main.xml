@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/forParentTextView"
+        android:layout_width="370px"
+        android:layout_height="174px"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="For Parent"
+        android:drawableStart="@drawable/for_parent"
+        android:drawableLeft="@drawable/for_parent"
+        android:gravity="center"
+        android:fontFamily="@font/simply_rounded_bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/navbar_style"
+        app:layout_constraintEnd_toStartOf="@+id/userButton"
+        app:layout_constraintStart_toEndOf="@+id/forParentTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cnb_menuResource="@menu/bottom_nav_menu"
+        app:cnb_iconSize="30dp"
+        android:elevation="8sp"
+        app:cnb_textAppearance="@style/SimplyRoundTextViewStyle"
+        >
+
+
+    </com.ismaeldivita.chipnavigation.ChipNavigationBar>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView"
+        tools:layout_editor_absoluteX="0dp" >
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/userButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/navbar_style"
+        android:elevation="8dp"
+        android:fontFamily="@font/simply_rounded_bold"
+        android:text="Username"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ProfilePicture"
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/userButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        app:srcCompat="@drawable/ic_boy" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:layout_constraintBottom_toBottomOf="@+id/ProfilePicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="@+id/userButton"
+        app:layout_constraintTop_toTopOf="@+id/userButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

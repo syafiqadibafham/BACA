@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".castle1.crown4"
+    android:orientation="horizontal"
+    android:background="@drawable/crown4background">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="241dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="64dp"
+        android:background="@drawable/letter_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615">
+
+        <TextView
+            android:id="@+id/letterCrown4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/simplyr_rounded"
+            android:gravity="center"
+            android:text="Mm"
+            android:textColor="@color/black"
+            android:textSize="150sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/castle1ButtonImageView"
+        android:layout_width="119dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:elevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/castle1button_tap" />
+
+    <ImageView
+        android:id="@+id/nextButtonImgView"
+        android:layout_width="119dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="64dp"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toEndOf="@+id/castle1ButtonImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/next_button" />
+
+    <ImageView
+        android:id="@+id/itemCrown4ImageView"
+        android:layout_width="334dp"
+        android:layout_height="299dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iron" />
+
+    <TextView
+        android:id="@+id/crown4ItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/simplyr_rounded"
+        android:text="Iron"
+        android:textColor="@color/black"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toEndOf="@+id/itemCrown4ImageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

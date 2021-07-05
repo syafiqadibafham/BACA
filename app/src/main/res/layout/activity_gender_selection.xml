@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".GenderSelection"
+    android:orientation="horizontal"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/BoyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BoyimageView"
+        android:layout_alignStart="@+id/BoyimageView"
+        android:layout_alignEnd="@+id/BoyimageView"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/simply_rounded_bold"
+        android:textAlignment="center"
+        android:text="Boy"
+        android:textSize="40dp"
+        android:textColor="@color/grey"/>
+
+    <ImageView
+        android:id="@+id/BoyimageView"
+        android:layout_width="150dp"
+        android:layout_height="189dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="180dp"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="146dp"
+        app:srcCompat="@drawable/ic_boy" />
+
+    <TextView
+        android:id="@+id/GirlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GirlimageView"
+        android:layout_alignStart="@+id/GirlimageView"
+        android:layout_alignEnd="@+id/GirlimageView"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="@font/simply_rounded_bold"
+        android:text="Girl"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/GirlimageView"
+        android:layout_width="150dp"
+        android:layout_height="189dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="180dp"
+        app:srcCompat="@drawable/ic_girl__1_" />
+
+    <Button
+        android:id="@+id/NextGenderbutton"
+        android:layout_width="235dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="311dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/nextgenderbutton"
+        android:backgroundTint="#CBA2FF"
+        android:fontFamily="@font/simply_rounded_bold"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/tickImageView"
+        android:layout_width="88dp"
+        android:layout_height="76dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-180dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginBottom="153dp"
+        android:layout_toEndOf="@+id/BoyimageView"
+        app:srcCompat="@drawable/ic_tick_button"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/tickImageView2"
+        android:layout_width="88dp"
+        android:layout_height="76dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-220dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginBottom="153dp"
+        android:layout_toEndOf="@+id/GirlimageView"
+        app:srcCompat="@drawable/ic_tick_button"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

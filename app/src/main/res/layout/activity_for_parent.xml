@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".ForParent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/forParentTextView"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/simply_rounded_bold"
+        android:gravity="center"
+        android:text="For Parent"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/forParentLogo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/forParentLogo"
+        app:layout_constraintTop_toBottomOf="@+id/forParentLogo" />
+
+    <ImageView
+        android:id="@+id/forParentLogo"
+        android:layout_width="110dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/for_parent" />
+
+    <ImageView
+        android:id="@+id/backButtonImageView"
+        android:layout_width="119dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:elevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/rateImageView"
+        android:layout_width="243dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forParentTextView"
+        app:layout_constraintVertical_bias="0.179"
+        app:srcCompat="@drawable/rate_review" />
+
+    <ImageView
+        android:id="@+id/reportImageView"
+        android:layout_width="243dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rateImageView"
+        app:layout_constraintTop_toBottomOf="@+id/forParentTextView"
+        app:layout_constraintVertical_bias="0.18"
+        app:srcCompat="@drawable/support" />
+
+    <ImageView
+        android:id="@+id/usImageView"
+        android:layout_width="243dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toEndOf="@+id/reportImageView"
+        app:layout_constraintTop_toBottomOf="@+id/forParentTextView"
+        app:layout_constraintVertical_bias="0.178"
+        app:srcCompat="@drawable/about_us" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

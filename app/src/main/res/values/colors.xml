@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#645578</color>
+    <color name="red">#EC8981</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="grey">#373737</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#92EABA</color>
+    <color name="yellow">#F7D487</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparentdark">#32000000</color>
+    <color name="transparentblack">#D5000000</color>
+    <color name="crown1">#FDB84F</color>
+    <array name="crown1progress">
+        <item>#9C6715</item>
+        <item>#FDB84F</item>
+    </array>
+    <array name="crown2progress">
+        <item>#304E95</item>
+        <item>#3E71E9</item>
+    </array>
+    <array name="crown3progress">
+        <item>#18D382</item>
+        <item>#4FFDB7</item>
+    </array>
+    <array name="crown4progress">
+        <item>#D318D3</item>
+        <item>#FD66FD</item>
+    </array>
+    <array name="crown5progress">
+        <item>#18BAD3</item>
+        <item>#66E8FD</item>
+    </array>
+    <array name="crown6progress">
+        <item>#D31818</item>
+        <item>#FD6666</item>
+    </array>
+    <array name="crown7progress">
+        <item>#D3D318</item>
+        <item>#FDFD66</item>
+    </array>
+    <array name="crown8progress">
+        <item>#3F51B5</item>
+        <item>#673AB7</item>
+    </array>
+</resources>
